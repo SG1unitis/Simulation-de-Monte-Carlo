@@ -1,4 +1,4 @@
-### Simulateur de Risques Cyber — Méthode FAIR
+# Simulateur de Risques Cyber — Méthode FAIR
 
 Ce projet est une application web interactive développée avec Streamlit. Elle permet d'évaluer financièrement le risque cyber d'une organisation en utilisant la méthodologie FAIR (Factor Analysis of Information Risk) couplée à des simulations de Monte-Carlo.
 
@@ -26,7 +26,7 @@ L'application mettra une dizaine de secondes à se lancer sur le port 8501.
 
 ## Tests Unitaires
 
-Le projet inclut une suite de tests pour valider les mécanismes de sécurité internes, notamment l'extraction d'URLs, la détection heuristique de typosquatting et la neutralisation des liens (defanging).
+Le projet inclut une suite de tests pour valider la précision des différentes fonctions mathématiques.
 
 ### Prérequis
 
