@@ -1,8 +1,8 @@
-**Simulateur de Risques Cyber — Méthode FAIR**
+### Simulateur de Risques Cyber — Méthode FAIR
 
 Ce projet est une application web interactive développée avec Streamlit. Elle permet d'évaluer financièrement le risque cyber d'une organisation en utilisant la méthodologie FAIR (Factor Analysis of Information Risk) couplée à des simulations de Monte-Carlo.
 
-**Architecture du Projet**
+## Architecture du Projet
 Le code a été modularisé pour séparer la logique mathématique, l'interface utilisateur et la génération de graphiques :
 
 - app.py : le point d'entrée de l'application. Gère la barre latérale, les paramètres d'entrée et le déclenchement de la simulation.
@@ -17,7 +17,7 @@ Le code a été modularisé pour séparer la logique mathématique, l'interface 
 - tests : dossier contenant le fichier de test.
   - test_simulator.py : s'assure que le calcul des fonctions mathématiques est correct et cohérent.
 
-**Installation & Exécution**
+## Installation & Exécution
 1. Assurez-vous d'avoir Python installé (version de Python utilisée : 3.14.3, version minimale **3.11**)
 2. Créez un environemment virtuel en fonction de votre OS  
 3. Installez les dépendances requises ``pip install -r requirements.txt``
@@ -41,7 +41,7 @@ Pour lancer l'ensemble des tests du projet, placez-vous à la racine du dossier 
 pytest
 ```
 
-**Librairies utilisées**
+## Librairies utilisées
 - streamlit 1.55.0 : cette librairie permet de créer l'interface web interactive (boutons, sliders, onlets) directement en Python, sans avoir besoin d'écrire du HTML/CSS/JavaScript.
 - numpy 2.4.3 : librairie utilisée dans `fair_core.py` pour générer et manipuler des vecteurs de 100 000 valeurs. Il sert aussi à calculer instantanément les centiles (VaR 80%, 90%, 99%).
 - scipy(scipy.stats) 1.17.1 : fournit les modèles statistiques utilisés pour la méthode FAIR (distribution log-normale pour les pertes, loi de Poisson pour la fréquence des incidents).
