@@ -23,7 +23,23 @@ Le code a été modularisé pour séparer la logique mathématique, l'interface 
 3. Installez les dépendances requises ``pip install -r requirements.txt``
 4. Lancez l'application : ``python -m streamlit run app.py`` (soyez dans le même dossier que app.py)
 L'application mettra une dizaine de secondes à se lancer sur le port 8501.
-5. pytest 
+
+## Tests Unitaires
+
+Le projet inclut une suite de tests pour valider les mécanismes de sécurité internes, notamment l'extraction d'URLs, la détection heuristique de typosquatting et la neutralisation des liens (defanging).
+
+### Prérequis
+
+Assurez-vous d'avoir installé `pytest`. S'il n'est pas dans votre `requirements.txt`, installez-le manuellement :
+```bash
+pip install pytest
+```
+Exécution des tests
+Pour lancer l'ensemble des tests du projet, placez-vous à la racine du dossier et exécutez :
+
+```bash
+pytest
+```
 
 **Librairies utilisées**
 - streamlit 1.55.0 : cette librairie permet de créer l'interface web interactive (boutons, sliders, onlets) directement en Python, sans avoir besoin d'écrire du HTML/CSS/JavaScript.
